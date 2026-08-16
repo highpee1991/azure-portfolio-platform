@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ipadeola O. Taiwo — Cloud & DevOps Engineer (Azure | Terraform | CI/CD). Building real-world infrastructure as code and seeking Junior Cloud Engineer, Azure Administrator, or DevOps Engineer roles." />
+  <meta name="keywords" content="Ipadeola Taiwo, Cloud Engineer, Azure, DevOps, Terraform, GitHub Actions, CI/CD, IaC, Azure Administrator, Junior Cloud Engineer" />
+  <meta name="author" content="Ipadeola O. Taiwo" />
+  <meta property="og:title" content="Ipadeola O. Taiwo | Cloud & DevOps Engineer" />
+  <meta property="og:description" content="Building production-grade Azure infrastructure with Terraform and CI/CD. Open to Junior Cloud, Azure Admin, and DevOps Engineer roles." />
+  <meta property="og:image" content="https://taiwo.name.ng/assets/taiwo-photo.jpg" />
+  <meta property="og:url" content="https://taiwo.name.ng" />
+  <meta property="og:type" content="website" />
+  <title>Ipadeola O. Taiwo | Cloud & DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Taiwo home">
+        <span class="logo-bracket">&lt;</span>Taiwo<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Journey</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certs</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Cloud &amp; DevOps Engineer &middot; Azure · Terraform · CI/CD</p>
+        <h1 class="hero-name">Taiwo</h1>
+        <p class="hero-fullname">Ipadeola O. Taiwo</p>
+        <p class="hero-summary">
+          I build and automate production-grade Azure infrastructure — from secure virtual networks and Terraform modules to multi-environment deployments and GitHub Actions CI/CD pipelines. Every project is version-controlled, documented, and publicly available. AZ-104 scheduled September 8, 2026.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/IPADEOLA_OLUWASEUN_TAIWO.pdf" target="_blank" download="Ipadeola-Taiwo-Cloud-DevOps-Resume.pdf" class="btn btn-secondary">Download Resume</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Open to opportunities &middot; Nigeria (Remote-friendly)</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <img src="assets/taiwo-photo.jpg" alt="Portrait of Ipadeola O. Taiwo" class="hero-photo" width="320" height="320" loading="eager" />
+        </div>
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">bash &mdash; terraform</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> terraform apply -auto-approve</p>
+            <p class="t-output">module.vm.azurerm_resource_group.main: Creating...</p>
+            <p class="t-output">module.vm.azurerm_virtual_network.main: Creating...</p>
+            <p class="t-output">module.vm.azurerm_linux_virtual_machine.main: Creating...</p>
+            <p class="t-output"><span class="t-success">&#10003; Apply complete! 10 resources added.</span></p>
+            <p><span class="prompt">$</span> git push origin main</p>
+            <p class="t-output">&#9656; GitHub Actions triggered</p>
+            <p class="t-output"><span class="t-success">&#10003; Pipeline passed &middot; Deployed to Azure</span></p>
+            <p class="t-output t-blink">&#9608;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-label="About section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a self-driven Cloud & DevOps Engineer focused on Microsoft Azure, Infrastructure as Code, and cloud automation, with a strong passion for innovation and continuous improvement. My approach is entirely hands-on: I architect real environments, deploy them in live Azure subscriptions, encounter real-world challenges, diagnose them from first principles, and document what I learn.</p>
+            <p>Through hands-on projects and continuous learning, I've progressed from Azure fundamentals to building multi-environment Terraform module systems with remote state, state locking, and GitHub Actions CI/CD pipelines that automate infrastructure deployment to Azure.</p>
+            <p>For me, innovation means finding better, more reliable, and more scalable ways to solve infrastructure and delivery problems, not simply using the newest technology.</p>
+            <p>AZ-104 is scheduled for September 8, 2026. My goal is to join a junior Cloud or DevOps engineering team where I can apply my hands-on infrastructure experience, contribute meaningful value from day one, and continue growing through real world engineering challenges.</p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="hi-icon">&#9729;&#65039;</span>
+                <div>
+                  <strong>Infrastructure as Code first</strong>
+                  <p>Everything I build is Terraform-managed, version-controlled, and reproducible in minutes.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hi-icon">&#128221;</span>
+                <div>
+                  <strong>Public build log</strong>
+                  <p>8+ technical articles on Dev.to and Hashnode documenting real errors, real fixes, real insights.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hi-icon">&#127919;</span>
+                <div>
+                  <strong>Job-ready trajectory</strong>
+                  <p>Junior Cloud / Azure Admin / DevOps Engineer — AZ-104 exam booked September 8, 2026.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Cloud Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Sep 8</span>
+              <span class="stat-label">AZ-104 Exam Booked</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Mar '26</span>
+              <span class="stat-label">Cloud Journey Began</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Open</span>
+              <span class="stat-label">Remote &amp; On-site Roles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills" aria-label="Skills section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Stack</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-sub">Earned through hands-on project work — every skill has a GitHub repo behind it.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#9729;&#65039;</span> Cloud Platform</h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag active">Microsoft Azure</span></li>
+              <li><span class="skill-tag active">Azure CLI</span></li>
+              <li><span class="skill-tag active">Azure Portal</span></li>
+              <li><span class="skill-tag active">Azure Storage</span></li>
+              <li><span class="skill-tag active">Azure Container Registry</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#127959;&#65039;</span> Infrastructure</h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag active">Virtual Machines</span></li>
+              <li><span class="skill-tag active">Virtual Networks</span></li>
+              <li><span class="skill-tag active">NSG</span></li>
+              <li><span class="skill-tag active">Azure Bastion</span></li>
+              <li><span class="skill-tag active">NAT Gateway</span></li>
+              <li><span class="skill-tag active">VNet Peering</span></li>
+              <li><span class="skill-tag active">Public IP / NIC</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#9881;&#65039;</span> Infrastructure as Code</h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag active">Terraform</span></li>
+              <li><span class="skill-tag active">HCL</span></li>
+              <li><span class="skill-tag active">Remote State (Azure Backend)</span></li>
+              <li><span class="skill-tag active">State Locking</span></li>
+              <li><span class="skill-tag active">Terraform Modules</span></li>
+              <li><span class="skill-tag active">Multi-environment IaC</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#128260;</span> CI/CD &amp; Automation</h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag active">GitHub Actions</span></li>
+              <li><span class="skill-tag active">Terraform CI/CD Pipelines</span></li>
+              <li><span class="skill-tag active">Service Principals</span></li>
+              <li><span class="skill-tag active">GitHub Secrets</span></li>
+              <li><span class="skill-tag active">Bash Scripting</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#128039;</span> Operating Systems</h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag active">Linux (Ubuntu)</span></li>
+              <li><span class="skill-tag active">SSH &amp; Remote Access</span></li>
+              <li><span class="skill-tag active">systemd</span></li>
+              <li><span class="skill-tag active">SCP / File Transfer</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#128051;</span> Containers
+              <span class="learning-badge">In Progress</span>
+            </h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag learning">Docker</span></li>
+              <li><span class="skill-tag learning">Dockerfile</span></li>
+              <li><span class="skill-tag learning">Azure Container Instances</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#128187;</span> Scripting &amp; Version Control</h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag active">Git &amp; GitHub</span></li>
+              <li><span class="skill-tag active">Bash</span></li>
+              <li><span class="skill-tag active">Python (basics)</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><span class="sg-icon">&#128270;</span> Networking</h3>
+            <ul class="skill-list">
+              <li><span class="skill-tag active">TCP/IP Fundamentals</span></li>
+              <li><span class="skill-tag active">DNS &amp; Custom Domains</span></li>
+              <li><span class="skill-tag active">CIDR &amp; Subnetting</span></li>
+              <li><span class="skill-tag active">Hub-and-Spoke Topology</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="skills-legend">
+          <span class="legend-dot ld-active"></span> Active in projects &nbsp;&nbsp;
+          <span class="legend-dot ld-learning"></span> Currently building
+        </p>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline" aria-label="Cloud journey timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Cloud Journey</span>
+          <h2 class="section-title">Engineering Timeline</h2>
+          <p class="section-sub">From day one to today — a committed, forward-moving trajectory.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-marker"></div>
+            <div class="tl-date">Mar 7, 2026</div>
+            <div class="tl-content">
+              <h3>The journey begins</h3>
+              <p>Made a deliberate commitment to cloud engineering. Set up Azure subscription, built first resource group, and began structured study of Azure fundamentals and CLI.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker"></div>
+            <div class="tl-date">Mar – Apr 2026</div>
+            <div class="tl-content">
+              <h3>First real Azure infrastructure</h3>
+              <p>Deployed the <strong>Azure Secure Infrastructure Lab</strong>: VNet, NSGs, Azure Bastion for secure RDP/SSH, NAT Gateway for outbound internet — zero public IPs on workload VMs.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker"></div>
+            <div class="tl-date">Apr 2026</div>
+            <div class="tl-content">
+              <h3>Networking deep-dive</h3>
+              <p>Built <strong>Multi-Region VNet Peering</strong> — hub-and-spoke topology connecting Azure networks across regions with custom UDR routing and connectivity validation.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker"></div>
+            <div class="tl-date">Apr – May 2026</div>
+            <div class="tl-content">
+              <h3>CLI mastery &amp; Bash automation</h3>
+              <p>Built the <strong>Azure CLI VM Management toolkit</strong> — Bash scripts for full VM lifecycle. Deployed a live website via CLI with NSG rules, SSH, Nginx, and SCP. Documented on Dev.to.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker"></div>
+            <div class="tl-date">May 2026</div>
+            <div class="tl-content">
+              <h3>Linux &amp; web hosting</h3>
+              <p>Completed a <strong>Linux Administration Lab</strong> and deployed a live static website on Azure Blob Storage with custom domain <em>taiwo.name.ng</em> and HTTPS via Azure CDN.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker"></div>
+            <div class="tl-date">Jun – Jul 2026</div>
+            <div class="tl-content">
+              <h3>Terraform &amp; Infrastructure as Code</h3>
+              <p>Built four progressive Terraform projects: basic Azure provisioning → remote state with locking → reusable module system → enterprise multi-environment deployment for three isolated teams. Introduced <code>locals</code>, <code>tfvars</code>, state recovery, and variable design principles.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker"></div>
+            <div class="tl-date">Aug 2026</div>
+            <div class="tl-content">
+              <h3>CI/CD Pipeline — GitHub Actions ✓</h3>
+              <p>Built a <strong>Terraform CI/CD pipeline</strong> with GitHub Actions: validate → plan → apply triggered on every push and PR. Applies only on merge to main. Service Principal auth, GitHub Secrets, cloud-init VM provisioning. Nine real failures diagnosed including OOM kernel kill. Zero manual terraform applies in production.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker current"></div>
+            <div class="tl-date">Sep – Oct 2026</div>
+            <div class="tl-content">
+              <h3>Docker &amp; Containers ← Now</h3>
+              <p>Containerising applications with Docker, pushing images to Azure Container Registry, and deploying to Azure Container Instances. Building toward a full cloud-native delivery pipeline.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-marker future"></div>
+            <div class="tl-date">Sep 8, 2026</div>
+            <div class="tl-content">
+              <h3>AZ-104 Exam — Booked &#128197;</h3>
+              <p>Microsoft Azure Administrator certification — validating hands-on skills in Azure governance, compute, storage, networking, and identity management. Exam date confirmed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects" aria-label="Projects section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-sub">Real infrastructure, real problems, real solutions — every project has a GitHub repo and a written article.</p>
+        </div>
+
+        <h3 class="projects-group-label">Completed</h3>
+        <div class="projects-grid">
+
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+            <div class="pc-header">
+              <span class="pc-badge badge-iac">IaC</span>
+              <h4>Terraform Enterprise Multi-Environment</h4>
+            </div>
+            <p class="pc-overview">Three fully isolated Azure environments — payments, analytics, platform — deployed from a single reusable Terraform module. Remote state in Azure Blob Storage with state locking. Survived a live network failure mid-apply and documented the recovery.</p>
+            <div class="pc-section">
+              <span class="pc-label">Problem Solved</span>
+              <p>Copy-pasting infrastructure across teams creates drift. One module, called three times with different values, eliminates duplication and makes team-scale IaC maintainable.</p>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Technologies</span>
+              <div class="tech-tags">
+                <span>Terraform</span><span>Azure</span><span>Remote State</span><span>State Locking</span><span>Modules</span><span>locals.tf</span>
+              </div>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Key Skills</span>
+              <ul class="pc-skills">
+                <li>Reusable module design with typed inputs &amp; outputs</li>
+                <li>Isolated state files per environment — shared backend</li>
+                <li>State recovery after network failure (force-unlock, state push)</li>
+              </ul>
+            </div>
+            <a href="https://github.com/highpee1991/terraform-enterprise" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+            <div class="pc-header">
+              <span class="pc-badge badge-iac">IaC</span>
+              <h4>Terraform VM Deployment with Remote State</h4>
+            </div>
+            <p class="pc-overview">Full Azure VM stack deployed via Terraform — VNet, Subnet, NSG, NIC, Public IP, and Linux VM. State stored in Azure Blob with locking. Proved state locking live with a two-terminal concurrent-apply test.</p>
+            <div class="pc-section">
+              <span class="pc-label">Problem Solved</span>
+              <p>Teams that store Terraform state locally risk overwrites and inconsistency. Remote state with locking gives the team a single source of truth and prevents race conditions.</p>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Technologies</span>
+              <div class="tech-tags">
+                <span>Terraform</span><span>Azure VM</span><span>Azure Storage</span><span>Remote Backend</span><span>NSG</span><span>SSH</span>
+              </div>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Key Skills</span>
+              <ul class="pc-skills">
+                <li>10-resource Terraform deployment in one apply</li>
+                <li>State locking proven with live concurrent-apply test</li>
+                <li>NSG association — the missing piece most tutorials skip</li>
+              </ul>
+            </div>
+            <a href="https://github.com/highpee1991/terraform-IAC" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <div class="pc-badge-wrap"><span class="pc-badge badge-iac">IaC</span></div>
+            <div class="pc-header">
+              <h4>Terraform VM — First IaC Deployment</h4>
+            </div>
+            <p class="pc-overview">First fully Terraform-managed Azure VM: VNet, Subnet, NSG with proper port rules, NIC, Public IP, and Ubuntu 22.04 VM. Five real errors encountered and resolved — provider typo, NSG rule type mismatch, SSH key path, Ubuntu SKU format, and silent NSG association failure.</p>
+            <div class="pc-section">
+              <span class="pc-label">Technologies</span>
+              <div class="tech-tags">
+                <span>Terraform</span><span>HCL</span><span>Azure VM</span><span>Ubuntu 22.04</span><span>Nginx</span>
+              </div>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Key Skills</span>
+              <ul class="pc-skills">
+                <li>End-to-end IaC from providers to running web server</li>
+                <li>Debugging Terraform errors from first principles</li>
+                <li>Variables, outputs, and provider configuration</li>
+              </ul>
+            </div>
+            <a href="https://github.com/highpee1991/Terraform-Virtual-Machine-Deployment" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project-card">
+            <div class="pc-header">
+              <span class="pc-badge badge-azure">Azure</span>
+              <h4>Azure Secure Infrastructure Lab</h4>
+            </div>
+            <p class="pc-overview">Production-style Azure environment with zero public IPs on workload VMs. All SSH/RDP access goes through Azure Bastion, outbound traffic controlled via NAT Gateway.</p>
+            <div class="pc-section">
+              <span class="pc-label">Problem Solved</span>
+              <p>Demonstrates the enterprise Bastion + NSG pattern for secure VM access — eliminating public IP exposure while maintaining full engineer access.</p>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Technologies</span>
+              <div class="tech-tags">
+                <span>Azure VNet</span><span>NSG</span><span>Azure Bastion</span><span>NAT Gateway</span><span>Ubuntu VMs</span><span>Azure CLI</span>
+              </div>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Key Skills</span>
+              <ul class="pc-skills">
+                <li>Network segmentation &amp; security rule design</li>
+                <li>Secure remote access without public IP exposure</li>
+                <li>Outbound traffic control via NAT Gateway</li>
+              </ul>
+            </div>
+            <a href="https://github.com/highpee1991/azure-cli-lab" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- PROJECT 5 -->
+          <article class="project-card">
+            <div class="pc-header">
+              <span class="pc-badge badge-net">Networking</span>
+              <h4>Multi-Region VNet Peering</h4>
+            </div>
+            <p class="pc-overview">Hub-and-spoke virtual networks connected across two Azure regions via global VNet peering — enabling private cross-region traffic over Microsoft's backbone.</p>
+            <div class="pc-section">
+              <span class="pc-label">Technologies</span>
+              <div class="tech-tags">
+                <span>Azure VNet</span><span>Global Peering</span><span>UDR</span><span>NSG</span><span>Azure CLI</span>
+              </div>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Key Skills</span>
+              <ul class="pc-skills">
+                <li>Hub-and-spoke network topology design</li>
+                <li>Cross-region connectivity over Microsoft backbone</li>
+                <li>Custom routing with User Defined Routes</li>
+              </ul>
+            </div>
+            <a href="https://github.com/highpee1991" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- PROJECT 6 -->
+          <article class="project-card">
+            <div class="pc-header">
+              <span class="pc-badge badge-auto">Automation</span>
+              <h4>CLI-Deployed Live Website on Azure VM</h4>
+            </div>
+            <p class="pc-overview">Deployed a live portfolio website on an Azure Ubuntu VM using only the CLI — no portal clicks. VNet, NSG, Public IP, Nginx, and SCP file transfer. Diagnosed and fixed an NSG priority conflict live.</p>
+            <div class="pc-section">
+              <span class="pc-label">Technologies</span>
+              <div class="tech-tags">
+                <span>Azure CLI</span><span>Bash</span><span>Ubuntu 22.04</span><span>Nginx</span><span>NSG</span><span>SCP</span>
+              </div>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Key Skills</span>
+              <ul class="pc-skills">
+                <li>End-to-end VM deployment without portal</li>
+                <li>NSG priority conflict — root-cause diagnosis and fix</li>
+                <li>Bash provisioning script for repeatable deploys</li>
+              </ul>
+            </div>
+            <a href="https://github.com/highpee1991/azure-cli-lab" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+        </div>
+
+        
+          <!-- PROJECT 7 — CICD PIPELINE -->
+          <article class="project-card devops">
+            <div class="pc-header">
+              <span class="pc-badge badge-devops">DevOps</span>
+              <h4>Terraform CI/CD Pipeline — GitHub Actions</h4>
+            </div>
+            <p class="pc-overview">Three-stage automated pipeline: validate → plan → apply. Triggered on push and PR to main. Applies to Azure only on merge — zero manual terraform commands in production. Service Principal authentication via GitHub Secrets. cloud-init VM provisioning. Nine real pipeline failures traced and fixed including a 6-minute silent hang and an OOM kernel kill from undersized VM RAM.</p>
+            <div class="pc-section">
+              <span class="pc-label">Problem Solved</span>
+              <p>No professional team runs terraform apply manually in production. This pipeline enforces a consistent, auditable infrastructure delivery process. Every change is validated, planned, and applied automatically — no human bypasses it.</p>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Technologies</span>
+              <div class="tech-tags">
+                <span>GitHub Actions</span><span>Terraform</span><span>Azure</span><span>Service Principal</span><span>cloud-init</span><span>YAML</span>
+              </div>
+            </div>
+            <div class="pc-section">
+              <span class="pc-label">Key Skills</span>
+              <ul class="pc-skills">
+                <li>Three-job pipeline with artifact-based plan handoff between jobs</li>
+                <li>Dual auth — azure/login for CLI + ARM env vars for Terraform provider</li>
+                <li>OOM root-cause traced through 5 failure layers to kernel kill</li>
+              </ul>
+            </div>
+            <a href="https://github.com/highpee1991/terraform-cicd-pipeline" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+        <h3 class="projects-group-label upcoming">In the Pipeline</h3>
+        <div class="projects-grid pipeline-grid">
+
+          <article class="project-card coming-soon">
+            <div class="pc-header">
+              <span class="pc-badge badge-cont">Containers</span>
+              <span class="coming-badge">Planned</span>
+              <h4>Dockerized App + Azure Container Registry</h4>
+            </div>
+            <p class="pc-overview">Web app containerised with Docker, image pushed to Azure Container Registry, deployed to Azure Container Instances. Full cloud-native delivery pipeline.</p>
+            <div class="pc-section">
+              <span class="pc-label">Why it matters</span>
+              <p>Containers are the standard deployment unit in modern cloud teams. This closes the loop from infrastructure to application.</p>
+            </div>
+            <div class="tech-tags"><span>Docker</span><span>Azure Container Registry</span><span>ACI</span><span>GitHub Actions</span></div>
+          </article>
+
+          <article class="project-card coming-soon">
+            <div class="pc-header">
+              <span class="pc-badge badge-k8s">Kubernetes</span>
+              <span class="coming-badge">Planned</span>
+              <h4>Kubernetes Deployment on AKS</h4>
+            </div>
+            <p class="pc-overview">Multi-container app deployed to Azure Kubernetes Service with namespaces, deployments, services, and horizontal pod autoscaling.</p>
+            <div class="pc-section">
+              <span class="pc-label">Why it matters</span>
+              <p>AKS is the dominant container orchestration platform in enterprise Azure. Completing the path from single container to production-grade orchestration.</p>
+            </div>
+            <div class="tech-tags"><span>Kubernetes</span><span>AKS</span><span>Helm</span><span>kubectl</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications" aria-label="Certifications section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications &amp; Training</h2>
+          <p class="section-sub">Formal credentials and verified learning that back the work.</p>
+        </div>
+        <div class="certs-grid">
+
+          <!-- AZ-104 PRIMARY -->
+          <div class="cert-card cert-active cert-featured">
+            <div class="cert-logo cl-104">AZ<br>104</div>
+            <div class="cert-info">
+              <h3>Microsoft Azure Administrator</h3>
+              <p class="cert-issuer">Microsoft &middot; AZ-104</p>
+              <p class="cert-desc">Validates skills in managing Azure subscriptions, governance, storage, compute, identity, networking, and monitoring. The core operational certification for Azure roles.</p>
+              <span class="cert-status cs-progress">Exam Booked &middot; September 8, 2026</span>
+            </div>
+          </div>
+
+          <!-- LINUX FOUNDATION -->
+          <div class="cert-card cert-earned">
+            <div class="cert-logo cl-lf" style="font-size:0.65rem;padding:0.3rem;">Linux<br>Foundation</div>
+            <div class="cert-info">
+              <h3>Introduction to Linux (LFS101)</h3>
+              <p class="cert-issuer">The Linux Foundation &middot; Dec 2025</p>
+              <p class="cert-desc">Foundational Linux knowledge covering the command line, filesystems, user management, and shell scripting — directly applied in every cloud project.</p>
+              <span class="cert-status cs-earned">Completed &middot; ID: LF-ocxio1nmwz</span>
+            </div>
+          </div>
+
+          <!-- KUBERNETES LFS158 -->
+          <div class="cert-card cert-earned">
+            <div class="cert-logo cl-k8s" style="font-size:0.65rem;padding:0.3rem;">Linux<br>Foundation</div>
+            <div class="cert-info">
+              <h3>Introduction to Kubernetes (LFS158)</h3>
+              <p class="cert-issuer">The Linux Foundation</p>
+              <p class="cert-desc">Kubernetes fundamentals — containers, pods, services, deployments, and cluster architecture. Foundation for AKS work in the pipeline.</p>
+              <span class="cert-status cs-earned">Completed</span>
+            </div>
+          </div>
+
+          <!-- KUBERNETES LFS250 -->
+          <div class="cert-card cert-earned">
+            <div class="cert-logo cl-k8s" style="font-size:0.65rem;padding:0.3rem;">Linux<br>Foundation</div>
+            <div class="cert-info">
+              <h3>Kubernetes &amp; Cloud Native Essentials (LFS250)</h3>
+              <p class="cert-issuer">The Linux Foundation</p>
+              <p class="cert-desc">Cloud-native concepts, container orchestration, observability, and the CNCF ecosystem — directly relevant to the Azure Kubernetes Service work ahead.</p>
+              <span class="cert-status cs-earned">Completed</span>
+            </div>
+          </div>
+
+          <!-- NETWORKING -->
+          <div class="cert-card cert-earned">
+            <div class="cert-logo cl-net" style="font-size:0.6rem;padding:0.3rem;">Network<br>Basics</div>
+            <div class="cert-info">
+              <h3>Networking Foundations: Networking Basics</h3>
+              <p class="cert-issuer">LinkedIn Learning</p>
+              <p class="cert-desc">TCP/IP, DNS, subnetting, and routing fundamentals — directly applied in Azure VNet design, NSG rule logic, and hub-and-spoke topology projects.</p>
+              <span class="cert-status cs-earned">Completed</span>
+            </div>
+          </div>
+
+          <!-- ROADMAP -->
+          <div class="cert-card cert-future">
+            <div class="cert-logo cl-next">+</div>
+            <div class="cert-info">
+              <h3>Next Certification</h3>
+              <p class="cert-issuer">2027 Roadmap</p>
+              <p class="cert-desc">Likely path: AZ-400 (DevOps Engineer Expert) or AZ-305 (Solutions Architect Expert) — depending on where the first role leads.</p>
+              <span class="cert-status cs-road">On Roadmap</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="section section-alt" id="articles" aria-label="Technical articles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Writing</span>
+          <h2 class="section-title">Technical Articles</h2>
+          <p class="section-sub">I write about what I build — errors, fixes, and insights included. Published on Dev.to and Hashnode.</p>
+        </div>
+        <div class="articles-grid" id="articlesGrid">
+          <div class="articles-loading" id="articlesLoading">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Loading articles from Dev.to&hellip;</p>
+          </div>
+        </div>
+        <div class="articles-cta">
+          <a href="https://dev.to/highpee1991" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Read All on Dev.to &rarr;
+          </a>
+          <a href="https://highpeedev.hashnode.dev" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Read All on Hashnode &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section resume-section" id="resume" aria-label="Resume download">
+      <div class="container">
+        <div class="resume-inner">
+          <div class="resume-text">
+            <span class="section-tag">Resume</span>
+            <h2 class="section-title">Download My Resume</h2>
+            <p>A concise one-page resume highlighting Azure and Terraform projects, CI/CD experience, technical skills, and career objective — optimised for ATS and human reviewers.</p>
+          </div>
+          <div class="resume-action">
+            <a href="assets/IPADEOLA_OLUWASEUN_TAIWO.pdf" target="_blank" download="Ipadeola-Taiwo-Cloud-DevOps-Resume.pdf" class="btn btn-primary btn-large">
+              &#8595; Download Resume (PDF)
+            </a>
+            <p class="resume-note">Last updated: August 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-label="Contact section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-sub">Open to junior cloud and DevOps roles. I respond within 24 hours.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-message">
+            <p>Whether you're a recruiter with an open role, an engineer who wants to collaborate, or someone on a similar cloud journey — my inbox is open.</p>
+            <p>Best reach: <strong>LinkedIn</strong> or <strong>email</strong>. Review my infrastructure work on <strong>GitHub</strong>, follow my build log on <strong>Dev.to</strong> and <strong>Hashnode</strong>.</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/ipadeola-taiwo/" target="_blank" rel="noopener noreferrer" class="contact-link cl-linkedin">
+              <span class="cl-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              <span class="cl-body"><strong>LinkedIn</strong><span>linkedin.com/in/ipadeola-taiwo/</span></span>
+            </a>
+            <a href="https://github.com/highpee1991" target="_blank" rel="noopener noreferrer" class="contact-link cl-github">
+              <span class="cl-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </span>
+              <span class="cl-body"><strong>GitHub</strong><span>github.com/highpee1991</span></span>
+            </a>
+            <a href="https://dev.to/highpee1991" target="_blank" rel="noopener noreferrer" class="contact-link cl-devto">
+              <span class="cl-icon" style="font-weight:700;font-size:14px;font-family:'JetBrains Mono',monospace;">DEV</span>
+              <span class="cl-body"><strong>Dev.to</strong><span>dev.to/highpee1991</span></span>
+            </a>
+            <a href="https://highpeedev.hashnode.dev" target="_blank" rel="noopener noreferrer" class="contact-link cl-hashnode">
+              <span class="cl-icon" style="font-weight:700;font-size:13px;font-family:'JetBrains Mono',monospace;">HS</span>
+              <span class="cl-body"><strong>Hashnode</strong><span>highpeedev.hashnode.dev</span></span>
+            </a>
+            <a href="mailto:ipadeola.it@gmail.com" class="contact-link cl-email">
+              <span class="cl-icon">&#9993;&#65039;</span>
+              <span class="cl-body"><strong>Email</strong><span>ipadeola.it@gmail.com</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" aria-label="Back to top">
+            <span class="logo-bracket">&lt;</span>Taiwo<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-fullname">Ipadeola O. Taiwo</p>
+          <p>Cloud &amp; DevOps Engineer &middot; Azure · Terraform · CI/CD</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certs</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://github.com/highpee1991" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/ipadeola-taiwo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LI</a>
+          <a href="https://dev.to/highpee1991" target="_blank" rel="noopener noreferrer" aria-label="Dev.to">DT</a>
+          <a href="https://highpeedev.hashnode.dev" target="_blank" rel="noopener noreferrer" aria-label="Hashnode">HS</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ipadeola O. Taiwo &middot; <a href="https://taiwo.name.ng" target="_blank" rel="noopener noreferrer">taiwo.name.ng</a> &middot; Built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
