@@ -33,3 +33,11 @@ variable "route_name" {
 variable "origin_host_header" {
   type = string
 }
+
+variable "cdn_frontdoor_custom_domain_ids" {
+  type = string
+}
+
+variable "www_cdn_frontdoor_custom_damain_ids" {
+  type = string
+}

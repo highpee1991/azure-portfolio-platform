@@ -13,3 +13,12 @@ output "primary_web_host" {
 output "frontdoor-url" {
   value = module.frontdoor.frontdoor-url
 }
+
+output "custom_domain_validation_token" {
+  value = module.custom-domain.custom_domain_validation_token
+}
+
+
+output "www_custom_domain_validation_token" {
+  value = module.custom-domain.www_custom_domain_validation_token
+}

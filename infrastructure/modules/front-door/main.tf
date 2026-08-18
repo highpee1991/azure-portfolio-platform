@@ -38,7 +38,7 @@ resource "azurerm_cdn_frontdoor_origin" "fdorigin" {
   http_port          = 80
   https_port         = 443
   origin_host_header = var.origin_host_header
-  
+
 }
 
 resource "azurerm_cdn_frontdoor_route" "route" {
@@ -46,6 +46,16 @@ resource "azurerm_cdn_frontdoor_route" "route" {
   cdn_frontdoor_endpoint_id     = azurerm_cdn_frontdoor_endpoint.fdendpoint.id
   cdn_frontdoor_origin_group_id = azurerm_cdn_frontdoor_origin_group.fdoriginggroup.id
   cdn_frontdoor_origin_ids      = [azurerm_cdn_frontdoor_origin.fdorigin.id]
-  patterns_to_match             = ["/*"]
-  supported_protocols           = ["Http", "Https"]
+
+  cdn_frontdoor_custom_domain_ids = [var.cdn_frontdoor_custom_domain_ids, var.www_cdn_frontdoor_custom_damain_ids]
+
+
+  patterns_to_match   = ["/*"]
+  supported_protocols = ["Http", "Https"]
+
+  cache {
+    query_string_caching_behavior = "IgnoreQueryString"
+    compression_enabled = true
+    content_types_to_compress     = ["text/html", "text/javascript", "text/xml", "text/css"]
+  }
 }

@@ -2,7 +2,7 @@
 
 Personal portfolio website for **Ipadeola O. Taiwo**, a Cloud & DevOps Engineer focused on Microsoft Azure, Terraform, and CI/CD automation. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no dependencies.
 
-**Live site:** [taiwo.name.ng](https://taiwo.name.ng)
+**Live site:** [taiwoipadeola.space](https://www.taiwoipadeola.space)
 
 ---
 
