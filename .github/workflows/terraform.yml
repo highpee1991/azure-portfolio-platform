@@ -35,7 +35,7 @@ jobs:
               working-directory: infrastructure/environments/production
             
             - name: Terraform Format
-              run: terraform fmt
+              run: terraform fmt -check -recursive
               working-directory: infrastructure/environments/production
 
             - name: Terraform Validate
