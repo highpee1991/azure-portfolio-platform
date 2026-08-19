@@ -47,18 +47,24 @@ jobs:
                 
             - name: Terraform Init
               run: terraform init
-              working-directory: infrastructure/environments/production
+              working-directory: ${{ env.WORKING_DIR }}
             
             - name: Terraform Format
               run: terraform fmt -check -recursive
-              working-directory: infrastructure/environments/production
+              working-directory: ${{ env.WORKING_DIR }}
 
             - name: Terraform Validate
               run: terraform validate
-              working-directory: infrastructure/environments/production
+              working-directory: ${{ env.WORKING_DIR }}
 
             - name: Terraform Plan
-              run: terraform plan
-              working-directory: infrastructure/environments/production 
+              run: terraform plan -input=false -out=tfplan
+              working-directory: ${{ env.WORKING_DIR }} 
+
+            - name: Upload Plan
+              uses: actions/upload-artifact@v4
+              with:
+                name: tfplan
+                path: ${{ env.WORKING_DIR }}
 
                 
