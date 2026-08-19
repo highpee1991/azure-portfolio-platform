@@ -55,7 +55,7 @@ resource "azurerm_cdn_frontdoor_route" "route" {
 
   cache {
     query_string_caching_behavior = "IgnoreQueryString"
-    compression_enabled = true
+    compression_enabled           = true
     content_types_to_compress     = ["text/html", "text/javascript", "text/xml", "text/css"]
   }
 }

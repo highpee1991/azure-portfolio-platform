@@ -26,16 +26,16 @@ module "storage_account" {
 module "frontdoor" {
   source = "../../modules/front-door"
 
-  resource_group_name             = azurerm_resource_group.prod-rg.name
-  sku_name                        = var.sku_name
-  frontdoor_profile_name          = var.frontdoor_profile_name
-  frontdoor_endpoint_name         = var.frontdoor_endpoint_name
-  frontdoor_origin_group_name     = var.frontdoor_origin_group_name
-  frontdoor_origin_name           = var.frontdoor_origin_name
-  host_name                       = module.storage_account.primary_web_host
-  origin_host_header              = module.storage_account.primary_web_host
-  route_name                      = var.route_name
-  cdn_frontdoor_custom_domain_ids = module.custom-domain.cdn_frontdoor_custom_domain_ids
+  resource_group_name                 = azurerm_resource_group.prod-rg.name
+  sku_name                            = var.sku_name
+  frontdoor_profile_name              = var.frontdoor_profile_name
+  frontdoor_endpoint_name             = var.frontdoor_endpoint_name
+  frontdoor_origin_group_name         = var.frontdoor_origin_group_name
+  frontdoor_origin_name               = var.frontdoor_origin_name
+  host_name                           = module.storage_account.primary_web_host
+  origin_host_header                  = module.storage_account.primary_web_host
+  route_name                          = var.route_name
+  cdn_frontdoor_custom_domain_ids     = module.custom-domain.cdn_frontdoor_custom_domain_ids
   www_cdn_frontdoor_custom_damain_ids = module.custom-domain.www_cdn_frontdoor_custom_domain_ids
 }
 
