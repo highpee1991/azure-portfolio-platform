@@ -1,13 +1,3 @@
-/**
- * TAIWO PORTFOLIO — script.js
- * Features:
- *  - Dark mode toggle (persisted in localStorage)
- *  - Sticky navbar shadow on scroll
- *  - Mobile hamburger menu
- *  - Smooth scroll + active nav link highlighting
- *  - Dev.to articles fetch with fallback
- *  - Scroll-reveal for cards
- */
 
 (function () {
   'use strict';
