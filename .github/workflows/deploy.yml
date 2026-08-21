@@ -27,10 +27,8 @@ jobs:
                     }
             - name: Sync portfolio files to Blob Storage
               run: |
-                az storage blob upload-batch \
+                az storage blob sync \
                 --account-name productioncontainerweb \
-                --destination '$web' \
+                --container '$web' \
                 --source portfolio \
-                --overwrite \
                 --delete-destination true \
-                --auth-mode login
