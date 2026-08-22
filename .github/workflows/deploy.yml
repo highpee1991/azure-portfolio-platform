@@ -36,6 +36,7 @@ jobs:
             - name: Purge Front Door cache
               run: |
                 az config set extension.use_dynamic_install=yes_without_prompt
+                az config set extension.dynamic_install_allow_preview=true
                 az afd endpoint purge \
                 --resource-group static-web-production-rg \
                 --profile-name portfolio-frontdoor-profile \
