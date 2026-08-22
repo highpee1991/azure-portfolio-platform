@@ -147,5 +147,3 @@ Note: DNS records at Namecheap are **not** managed by Terraform and will not be 
 - ✅ Custom domains (apex + www) with managed TLS
 - ✅ CI/CD — infrastructure pipeline (plan on PR, apply on merge to main)
 - ✅ CI/CD — content pipeline (portfolio sync + cache purge)
-- ⬜ WAF / security policy
-- ⬜ Monitoring / observability
