@@ -32,3 +32,11 @@ jobs:
                 --container '$web' \
                 --source portfolio \
                 --delete-destination true \
+
+            - name: Purge Front Door cache
+              run: |
+                az afd endpoint purge \
+                --resource-group static-web-production-rg \
+                --profile-name portfolio-frontdoor-profile \
+                --endpoint-name portfolio-frontdoor-endpoint \
+                --contents-paths "/*"
