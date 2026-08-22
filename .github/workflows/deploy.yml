@@ -39,4 +39,4 @@ jobs:
                 --resource-group static-web-production-rg \
                 --profile-name portfolio-frontdoor-profile \
                 --endpoint-name portfolio-frontdoor-endpoint \
-                --contents-paths "/*"
+                --content-paths "/*"

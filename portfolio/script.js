@@ -303,7 +303,7 @@
     addRevealClasses();
     setupRevealObserver();
     fetchDevToArticles();
-    onScroll(); // run once on load
+    onScroll();
   }
 
   if (document.readyState === 'loading') {
